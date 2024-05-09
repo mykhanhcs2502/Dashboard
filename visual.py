@@ -76,7 +76,7 @@ fig_map = px.scatter_geo(
     hover_name="CountryRegionName",
     size=selected_attribute,
     projection="natural earth",
-    title=f"Sales by State for Year {selected_year}",
+    title=f"{selected_attribute} by Country for Year {selected_year}",
     color="CountryRegionName",  # Assign different colors based on country
 )
 st.plotly_chart(fig_map)
